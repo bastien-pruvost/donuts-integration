@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$font2: 'Manrope', sans-serif;
+$font1: 'Outfit', sans-serif;
+
+$backgroundColor1: #FBE5E1;
+$backgroundColor2: #fffafa;
+$PrimaryColor: #FE707B;
+$black: #000000;
+$grey: #666666;
+
+
+// ### CSS Reset ###
+
+html, body, * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+// ### General ###
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    display: inline;
+    font-family: $font1;
+    color: $black;
+    font-size: 32px;
+  }
+  &Dot {
+    display: inline;
+    font-family: $font1;
+    color: $PrimaryColor;
+    font-size: 38px;
+  }
+}
+
+h2 {
+  font-family: $font1;
+  color: $PrimaryColor;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 70px;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: $font1;
+  color: $black;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient($backgroundColor1, $backgroundColor2);
+  padding: 25px 25px;
+}
+
+.rounded {
+  border-radius: 15px;
+}
+
+.btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $PrimaryColor;
+  color: $PrimaryColor;
+  width: 130px;
+  height: 50px;
+  &:hover {
+    color: darken($PrimaryColor, 15%);
+    border: 2px solid darken($PrimaryColor, 10%);
+  }
+}
+
+.btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $PrimaryColor;
+  background: $PrimaryColor;
+  font-family: $font1;
+  font-size: 16px;
+  color: #ffffff;
+  width: 130px;
+  height: 50px;
+  &:hover {
+    color: #ffffff;
+    background: darken($PrimaryColor, 3%);
+    border: 2px solid darken($PrimaryColor, 3%);
+    transform: scale(1.025);
+  }
+}
+
+// ### Header ###
+
+header {
+  width: 100%;
+  background: #ffffff;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: visible;
+    font-family: $font1;
+    color: $grey;
+    font-size: 16px;
+    font-weight: 400;
+    a {
+      margin-left: 40px;
+      color: $grey;
+      &:hover {
+        transform: scale(1.025);
+        color: darken($grey, 30%);
+      }
+    }
+  }
+}
+
+// ### Main ###
+
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // flex-wrap: wrap;
+  height: 80vh;
+
+  .miniature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: fit-content;
+    &__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      border-radius: 50%;
+      padding: 10px;
+      margin: 5px;
+      img {
+        min-width: 20px;
+        max-width: 20px;
+
+        max-width: 45px;
+        max-height: 45px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .product-img {
+    min-width: 350px;
+    max-width: 400px;
+    margin: 0 80px;
+    object-fit: cover;
+  }
+
+  .product-desc {
+    min-width: 200px;
+    max-width: 450px;
+    p {
+      margin-top: 10px;
+    }
+    &__details {
+      display: flex;
+      justify-content: space-between;
+      width: 75%;
+      margin-top: 20px;
+      font-family: $font1;
+      color: $grey;
+      font-size: 15px;
+      .title {
+        color: $black;
+      }
+      &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 50px;
+      }
+    }
+    &__buy {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 40px;
+      height: 50px;
+      select {
+        height: 100%;
+        width: 25%;
+        text-align: center;
+        padding: 10px;
+        // appearance: none;
+      }
+      a {
+        width: 60%;
+      }
+    }
+  }
+}
