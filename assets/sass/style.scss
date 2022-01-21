@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-$font2: 'Manrope', sans-serif;
 $font1: 'Outfit', sans-serif;
 
 $backgroundColor1: #FBE5E1;
@@ -9,6 +8,8 @@ $PrimaryColor: #FE707B;
 $black: #000000;
 $grey: #666666;
 
+$laptop: 1150px;
+$mobile: 850px;
 
 // ### CSS Reset ###
 
@@ -26,17 +27,27 @@ html, body, * {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 143px;
+  @media screen and (max-width: #{$mobile}) {
+    min-width: 100px;
+  }
   h1 {
     display: inline;
     font-family: $font1;
     color: $black;
     font-size: 32px;
+    @media screen and (max-width: #{$mobile}) {
+      font-size: 20px;
+    }
   }
   &Dot {
     display: inline;
     font-family: $font1;
     color: $PrimaryColor;
     font-size: 38px;
+    @media screen and (max-width: #{$mobile}) {
+      font-size: 26px;
+    }
   }
 }
 
@@ -47,6 +58,17 @@ h2 {
   font-weight: 400;
   line-height: 70px;
   letter-spacing: 1px;
+  @media screen and (max-width: #{$laptop}) {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  @media screen and (max-width: #{$mobile}) {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: center;
+    padding: 0 5px;
+  }
 }
 
 p {
@@ -54,16 +76,26 @@ p {
   color: $black;
   font-size: 18px;
   line-height: 30px;
+  @media screen and (max-width: #{$mobile}) {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0 10px;
+  }
 }
 
 body {
   height: 100vh;
+  max-height: 100vh;
   background: linear-gradient($backgroundColor1, $backgroundColor2);
   padding: 25px 25px;
+  @media screen and (max-width: #{$mobile}) {
+    padding: 20px;
+  }
 }
 
 .rounded {
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .btn1 {
@@ -91,6 +123,9 @@ body {
   color: #ffffff;
   width: 130px;
   height: 50px;
+  @media screen and (max-width: #{$mobile}) {
+    height: 42px;
+  }
   &:hover {
     color: #ffffff;
     background: darken($PrimaryColor, 3%);
@@ -109,6 +144,18 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
+  @media screen and (max-width: #{$mobile}) {
+    height: 60px;
+    padding: 10px 20px;
+  }
+  .mobileNav {
+    display: none;
+    color: $black;
+    font-size: 20px;
+    @media screen and (max-width: #{$mobile}) {
+    display: block;
+    }
+  }
   nav {
     position: relative;
     display: flex;
@@ -119,6 +166,9 @@ header {
     color: $grey;
     font-size: 16px;
     font-weight: 400;
+    @media screen and (max-width: #{$mobile}) {
+      display: none;
+    }
     a {
       margin-left: 40px;
       color: $grey;
@@ -134,10 +184,15 @@ header {
 
 .landing {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  // flex-wrap: wrap;
-  height: 80vh;
+  height: calc(90vh - 60px);
+    @media screen and (max-width: #{$mobile}) {
+    flex-direction: column;
+    height: calc(100vh - 60px - 40px - 20px);
+    margin-top: 20px;
+    justify-content: space-between;
+  }
 
   .miniature {
     display: flex;
@@ -145,6 +200,10 @@ header {
     justify-content: center;
     align-items: center;
     min-width: fit-content;
+    @media screen and (max-width: #{$mobile}) {
+      flex-direction: row;
+      order: 2;
+    }
     &__container {
       display: flex;
       justify-content: center;
@@ -153,29 +212,52 @@ header {
       border-radius: 50%;
       padding: 10px;
       margin: 5px;
+      @media screen and (max-width: #{$mobile}) {
+        padding: 5px;
+      }
       img {
-        min-width: 20px;
-        max-width: 20px;
-
-        max-width: 45px;
-        max-height: 45px;
+        width: 45px;
+        height: 45px;
         object-fit: cover;
+        @media screen and (max-width: #{$mobile}) {
+          min-width: 35px;
+          min-height: 35px;
+        width: 5vh;
+        height: 5vh;
+          max-height: 55px;
+          max-width: 55px;
+        }
       }
     }
   }
 
   .product-img {
-    min-width: 350px;
+    min-width: 300px;
     max-width: 400px;
     margin: 0 80px;
     object-fit: cover;
+    @media screen and (max-width: #{$mobile}) {
+      min-width: 0;
+      max-width: 80%;
+      max-height: 30vh;
+      margin: 0;
+      order: 1;
+    }
   }
 
   .product-desc {
     min-width: 200px;
     max-width: 450px;
+    padding-right: 20px;
+    @media screen and (max-width: #{$mobile}) {
+      padding-right: 0;
+      order: 3;
+    }
     p {
-      margin-top: 10px;
+      margin-top: 15px;
+      @media screen and (max-width: #{$mobile}) {
+      order: 3;
+      }
     }
     &__details {
       display: flex;
@@ -185,14 +267,28 @@ header {
       font-family: $font1;
       color: $grey;
       font-size: 15px;
+      @media screen and (max-width: #{$mobile}) {
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 14px;
+        margin-top: 15px;
+      }
       .title {
         color: $black;
+        font-weight: 500;
       }
       &__box {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 50px;
+        margin-right: 20px;
+        @media screen and (max-width: #{$mobile}) {
+
+          margin-right: 0;
+          align-items: center;
+        }
       }
     }
     &__buy {
@@ -202,15 +298,38 @@ header {
       align-items: center;
       margin-top: 40px;
       height: 50px;
+      @media screen and (max-width: #{$mobile}) {
+        height: 42px;
+        margin-top: 20px;
+      }
       select {
         height: 100%;
-        width: 25%;
+        width: 100px;
+        min-width: 100px;
         text-align: center;
-        padding: 10px;
-        // appearance: none;
+        padding-right: 15px;
+        color: $grey;
+        outline: none;
+        appearance: none;
+        font-family: $font1;
+
+      }
+      .arrow {
+        position: absolute;
+        left: 76px;
+        vertical-align: center;
+        color: $grey;
+        font-size: 13px;
+        pointer-events: none;
       }
       a {
         width: 60%;
+        margin-left: 10px;
+        padding: 0 20px;
+        min-width: 118px;
+        @media screen and (max-width: #{$mobile}) {
+          font-size: 14px;
+        }
       }
     }
   }
