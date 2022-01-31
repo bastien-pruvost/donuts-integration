@@ -1,7 +1,7 @@
 {
   "name": "donuts-integration",
   "version": "1.0.0",
-  "description": "In this project I integrate a model found on Dribble, it was made by James Utkovic ( https://dribbble.com/jutkovic ).  \r I only use css. I want to master it as much as possible before switching to JavaScript.",
+  "description": "Integration of a model for an online donuts shop",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./assets/sass/style.scss:./assets/css/style.css --style expanded",
