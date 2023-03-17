@@ -1,21 +1,22 @@
 {
   "name": "donuts-integration",
   "version": "1.0.0",
-  "description": "Integration of a model for an online donuts shop",
-  "main": "index.js",
+  "private": true,
+  "description": "Integration of a model for a fake online donuts shop",
+  "keywords": [],
+  "homepage": "https://github.com/bastien-pruvost/donuts-integration#readme",
+  "license": "MIT",
+  "author": {
+    "name": "Bastien Pruvost",
+    "url": "https://github.com/bastien-pruvost"
+  },
+  "main": "index.html",
+  "browserslist": "last 4 versions",
   "scripts": {
     "sass": "sass --watch ./assets/sass/style.scss:./assets/css/style.css --style expanded",
     "prefix": "postcss ./assets/css/style.css --use autoprefixer -d ./assets/css/prefixed/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Dev-BastienPruvost/donuts-integration.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Dev-BastienPruvost/donuts-integration/issues"
-  },
-  "homepage": "https://github.com/Dev-BastienPruvost/donuts-integration#readme",
-  "browserslist": "last 4 versions"
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
 }

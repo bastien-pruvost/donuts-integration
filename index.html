@@ -1,95 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Strawberry Iced Donuts</title>
+    <link rel="icon" type="image/png" href="./img/icon.png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Strawberry Iced Donuts</title>
-  <link rel="icon" type="image/png" href="./img/icon.png" />
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-
-<body>
-  <header class="rounded">
-    <div class="logo">
-      <h1>dough co</h1><span class="logoDot">.</span>
-    </div>
-    <nav>
-      <a href="#">Doughnuts</a>
-      <a href="#">Locations</a>
-      <a href="#">Careers</a>
-      <a href="#">Team</a>
-      <a href="#" class="rounded btn1">Order Now</a>
-    </nav>
-    <a href="" class="mobileNav"><i class="fas fa-bars"></i></a>
-  </header>
-
-  <main class="landing">
-
-    <div class="miniature">
-      <div class=miniature__container>
-        <img src="./img/miniature-1.png" alt="Miniature donut 1">
+  <body>
+    <header class="rounded">
+      <div class="logo">
+        <h1>dough co</h1>
+        <span class="logoDot">.</span>
       </div>
-      <div class=miniature__container>
-        <img src="./img/miniature-2.png" alt="Miniature donut 2">
-      </div>
-      <div class=miniature__container>
-        <img src="./img/miniature-3.png" alt="Miniature donut 3">
-      </div>
-    </div>
+      <nav>
+        <a href="#">Doughnuts</a>
+        <a href="#">Locations</a>
+        <a href="#">Careers</a>
+        <a href="#">Team</a>
+        <a href="#" class="rounded btn1">Order Now</a>
+      </nav>
+      <a href="" class="mobileNav"><i class="fas fa-bars"></i></a>
+    </header>
 
-    <img src="./svg/donut.svg" alt="" class="product-img">
-
-    <div class="product-desc">
-      <h2>Strawberry Iced With Sprinkles</h2>
-
-      <p>Our glazed doughnut is dipped in strawberry icing and topped with festive rainbow sprinkles.</p>
-
-      <div class="product-desc__details">
-
-        <div class="product-desc__details__box">
-          <span class="title">Weight</span>
-          <span class="spec">120g</span>
+    <main class="landing">
+      <div class="miniature">
+        <div class="miniature__container">
+          <img src="./img/miniature-1.png" alt="Miniature donut 1" />
         </div>
-        <div class="product-desc__details__box">
-          <span class="title">Sugar</span>
-          <span class="spec">11g</span>
+        <div class="miniature__container">
+          <img src="./img/miniature-2.png" alt="Miniature donut 2" />
         </div>
-        <div class="product-desc__details__box">
-          <span class="title">Calories</span>
-          <span class="spec">210</span>
-        </div>
-        <div class="product-desc__details__box">
-          <span class="title">Sodium</span>
-          <span class="spec">85mg</span>
+        <div class="miniature__container">
+          <img src="./img/miniature-3.png" alt="Miniature donut 3" />
         </div>
       </div>
 
-      <div class="product-desc__buy">
-        <select name="Quantity" id="quantity" class="rounded">
-          <option value="" disabled selected>Quantity</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="5">5</option>
-          <option value="10">10</option>
-          <option value="20">20</option>
-          <option value="50">50</option>
-          <option value="100">100</option>
-        </select>
-        <i class="fas fa-chevron-down arrow"></i>
-        <a href="#" class="rounded btn2">Add To Cart</a>
+      <img src="./img/donut.png" alt="" class="product-img" />
+
+      <div class="product-desc">
+        <h2>Strawberry Iced With Sprinkles</h2>
+
+        <p>
+          Our glazed doughnut is dipped in strawberry icing and topped with festive rainbow
+          sprinkles.
+        </p>
+
+        <div class="product-desc__details">
+          <div class="product-desc__details__box">
+            <span class="title">Weight</span>
+            <span class="spec">120g</span>
+          </div>
+          <div class="product-desc__details__box">
+            <span class="title">Sugar</span>
+            <span class="spec">11g</span>
+          </div>
+          <div class="product-desc__details__box">
+            <span class="title">Calories</span>
+            <span class="spec">210</span>
+          </div>
+          <div class="product-desc__details__box">
+            <span class="title">Sodium</span>
+            <span class="spec">85mg</span>
+          </div>
+        </div>
+
+        <div class="product-desc__buy">
+          <select name="Quantity" id="quantity" class="rounded">
+            <option value="" disabled selected>Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+          <i class="fas fa-chevron-down arrow"></i>
+          <a href="#" class="rounded btn2">Add To Cart</a>
+        </div>
       </div>
+    </main>
 
-    </div>
-
-  </main>
-
-  <footer>
-    <!-- <span class="backText">Strawberry</span> -->
-  </footer>
-
-</body>
-
+    <footer>
+      <!-- <span class="backText">Strawberry</span> -->
+    </footer>
+  </body>
 </html>

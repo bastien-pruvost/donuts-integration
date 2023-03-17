@@ -1,14 +1,85 @@
-# Integration - Donuts product page
-<a href="https://donuts.pruvostbastien.fr/" target="_blank"><img src="https://img.shields.io/badge/ctrl_%2B_click_here_to_see_the_website-324050?style=for-the-badge&logo=github&logoColor=white" /></a>
+<!-- prettier-ignore-start -->
 
-## Integration of a product page model for an online donuts shop
+<!-- Rename all occurences with Cmd + D :
 
-In this project I integrate a model found on Dribble, it was made by James Utkovic ( https://dribbble.com/jutkovic ).  
-I only use css because I think it's important to master the basics as much as possible before moving on JavaScript.
+Product Page - Donuts Shop
+donuts-integration
+donuts.pruvostbastien.fr
+https://donuts.pruvostbastien.fr
 
----
+ -->
 
-## Intégration de la maquette d'une page produit pour un site de vente de donuts
+# Product Page - Donuts Shop
 
-Dans ce projet j'intègre une maquette trouvée sur Dribble, elle a été réalisé par James Utkovic ( https://dribbble.com/jutkovic ).  
-J'utilise uniquement css car j'estime qu'il faut maitriser les bases au maximum avant de passer à JavaScript.
+A simple product page for a fake online donuts shop.
+
+[donuts.pruvostbastien.fr](https://donuts.pruvostbastien.fr)
+
+
+## About the project
+
+In this project I coded a model found on Dribble, this model was made by James Utkovic ( https://dribbble.com/jutkovic ).
+
+I try to master CSS well before moving on to the famous javascript language
+
+
+## Features
+
+- Responsive
+- Clean UI
+
+
+## Run locally
+
+1. Clone the project:
+
+```bash
+  git clone https://github.com/bastien-pruvost/donuts-integration.git
+```
+
+2. Go to the project directory:
+
+```bash
+  cd donuts-integration
+```
+
+3. Run `index.html` file with your browser
+
+
+## Suggestions
+
+If you have any suggestion, feel free to [create an issue](https://github.com/bastien-pruvost/donuts-integration/issues) with the tag "enhancement"
+
+
+## Report bug / Support
+
+To report a bug or get help, please [create an issue](https://github.com/bastien-pruvost/donuts-integration/issues).
+
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request.
+
+1. [Fork the project](https://github.com/bastien-pruvost/donuts-integration/fork)
+2. Create your feature branch (`git checkout -b feature/my-feature`)
+3. Code your feature
+4. Commit your changes (`git commit -m 'feat: add amazing feature'`)
+5. Push to the branch (`git push origin feature/my-feature`)
+6. [Open a pull request](https://github.com/bastien-pruvost/donuts-integration/compare)
+
+You can also simply open an issue with the tag "enhancement".
+
+Don't forget to give the project a star! Thanks again!
+
+
+## License
+
+Distributed under the [MIT License](https://choosealicense.com/licenses/mit).
+
+See `LICENSE` file for more information.
+
+
+
+<!-- prettier-ignore-end -->
